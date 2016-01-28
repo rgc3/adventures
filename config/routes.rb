@@ -2,7 +2,9 @@ Rails.application.routes.draw do
   resources :activities
   resources :states
 
-  get '/about' => 'welcome#about'
+  get 'about' => 'welcome#about'
+
+  get 'contact' => 'welcome#contact'
 
   root 'welcome#index'
 
