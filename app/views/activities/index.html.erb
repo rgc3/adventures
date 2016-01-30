@@ -31,3 +31,11 @@
 <br>
 
 <%= link_to 'New Activity', new_activity_path %>
+
+<br>
+
+<div>
+<% @images.each do |photo| %>
+  <%= image_tag photo, width: 400, height: 250; %>
+<% end %>
+</div>
