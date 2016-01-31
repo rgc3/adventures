@@ -1,8 +1,14 @@
-<p id="notice"><%= notice %></p>
+<div id="main-container" class="container">
 
-<h1>Listing Activities</h1>
+      <div class="row">
+        <div id="sidebar" class="col-xs-6">
+          <div class ="headr">
+            <h1>Activities</h1>
+          </div>
+        </div>
 
-<table>
+        <div id="content" class="col-xs-6">
+          <table>
   <thead>
     <tr>
       <th>ID</th>
@@ -35,8 +41,20 @@
 <br>
 <br>
 
-<div>
-<% @images.each do |photo| %>
-  <%= image_tag photo, width: 400, height: 250; %>
-<% end %>
-</div>
+          <div>
+          <% @images.each do |photo| %>
+            <%= image_tag photo, width: 200, height: 125; %>
+          <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+<!-- code below -->
+
